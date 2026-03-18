@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz. lang="es" mejora accesibilidad y SEO -->
+
+<head>
+  <!-- Sección de metadatos no visibles en pantalla -->
+
+  <meta charset="UTF-8">
+  <!-- Codificación de caracteres para soportar todo tipo de símbolos y letras -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Asegura que la página sea responsive en dispositivos móviles -->
+
+  <meta name="description" content="Proyectos de John Doe: HTML Portfolio, Calculadora, Quiz App, Countdown Timer y más.">
+  <!-- SEO: descripción específica de la página de proyectos para motores de búsqueda -->
+
+  <meta name="keywords" content="proyectos frontend, HTML, JavaScript, calculadora, quiz app, portfolio">
+  <!-- SEO: palabras clave específicas de los proyectos mostrados -->
+
+  <meta name="author" content="John Doe">
+  <!-- SEO: autor de la página -->
+
+  <meta name="robots" content="index, follow">
+  <!-- SEO: permite que los buscadores indexen y sigan los enlaces de esta página -->
+
+  <meta property="og:title" content="Proyectos - John Doe Frontend Developer">
+  <!-- Open Graph: título al compartir en redes sociales -->
+
+  <meta property="og:description" content="Explorá todos los proyectos de desarrollo frontend de John Doe.">
+  <!-- Open Graph: descripción al compartir en redes sociales -->
+
+  <meta property="og:type" content="website">
+  <!-- Open Graph: tipo de contenido -->
+
+  <title>Projects - John Doe</title>
+  <!-- Título de la pestaña del navegador -->
+
+</head>
+
+<body>
+  <!-- Inicio del contenido visible del documento -->
+
+      <!-- ================================================ -->
+  <!--                     HEADER                       -->
+  <!-- ================================================ -->
+
+  <header>
+    <!-- <header> es el encabezado semántico del sitio. Contiene logo y navegación -->
+
+    <table width="100%" border="1">
+      <!-- Usamos una tabla de 1 fila y 2 celdas para alinear logo (izquierda) y nav (derecha) -->
+      <!-- width="100%" hace que la tabla ocupe todo el ancho disponible -->
+      <!-- border="1" agrega el borde visible alrededor de las celdas (sin CSS) -->
+
+      <tr>
+        <!-- <tr> = table row: una fila de la tabla -->
+
+        <td>
+          <!-- <td> = table data: primera celda, contiene el logo y nombre -->
+
+          <span>&#128104;&#8205;&#128187;</span>
+          <!-- &#9632; es la entidad HTML para el símbolo ■ (cuadrado negro), usado como logo -->
+
+          <strong>Guido Rubio</strong>
+          <!-- <strong> resalta el nombre con énfasis semántico -->
+
+        </td>
+        <!-- Cierre de la primera celda -->
+
+        <td align="right">
+          <!-- Segunda celda con align="right" para alinear el nav a la derecha (sin CSS) -->
+
+          <nav>
+            <!-- <nav> marca el bloque de navegación principal -->
+
+            <a href="index.html">Home</a>
+            <!-- Enlace a la página de inicio -->
+
+            /
+
+            <a href="projects.html">Projects</a>
+            <!-- Enlace a la página de proyectos. La / separa los enlaces visualmente -->
+
+            /
+
+            <a href="articles.html">Articles</a>
+            <!-- Enlace a la página de artículos -->
+
+            /
+
+            <a href="contact.html">Contact</a>
+            <!-- Enlace a la página de contacto -->
+
+          </nav>
+          <!-- Cierre de la navegación -->
+
+        </td>
+        <!-- Cierre de la segunda celda -->
+
+      </tr>
+      <!-- Cierre de la fila del header -->
+
+    </table>
+    <!-- Cierre de la tabla del header -->
+
+  </header>
+  <!-- Cierre del encabezado del sitio -->
+
+  <main>
+    <!-- Contenido principal de la página de proyectos -->
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section>
+      <!-- Sección de introducción -->
+
+      <br>
+      <!-- Espacio visual superior -->
+
+      <h1>Mis Projectos</h1>
+      <!-- H1 único de la página: esencial para SEO -->
+
+      <p>Una colección de proyectos que he construido para practicar y demostrar mis habilidades de desarrollo frontend.</p>
+      <!-- Descripción introductoria de la sección -->
+
+      <br>
+
+    </section>
+
+    <!-- ===== PROYECTO 1: HTML Only Portfolio ===== -->
+    <article id="html-portfolio">
+      <!-- <article> para contenido autónomo. id="html-portfolio" permite el enlace con ancla #html-portfolio -->
+
+      <h2>Portfolio HTML</h2>
+      <!-- Nombre del proyecto como H2 (jerárquicamente bajo el H1 de la página) -->
+
+      <p><strong>Descripción:</strong> Un sitio portfolio construido únicamente con HTML5 semántico, sin CSS ni JavaScript.</p>
+      <!-- <strong> resalta la palabra "Descripción" con énfasis semántico -->
+
+      <p><strong>Tecnologías:</strong> HTML5</p>
+
+      <p><strong>Estado:</strong> Completado</p>
+
+      <p>
+        <a href="https://github.com/SoyRuma/CV-GuidoRubio?tab=readme-ov-file" target="_blank">Ver código en GitHub</a>
+        <!-- target="_blank" abre el enlace en una nueva pestaña del navegador -->
+        |
+        <a href="https://soyruma.github.io/CV-GuidoRubio/" target="_blank">Ver demo en vivo</a>
+      </p>
+
+    </article>
+
+
+  </main>
+  <!-- Cierre del contenido principal -->
+
+  <footer>
+    <!-- Pie de página del sitio -->
+
+    <p align="center">
+      <small>&#169; all rights reserved 2025</small>
+      <!-- &#169; es la entidad HTML para el símbolo © -->
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

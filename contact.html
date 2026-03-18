@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz del documento -->
+
+<head>
+  <!-- Metadatos de la página de contacto -->
+
+  <meta charset="UTF-8">
+  <!-- Codificación UTF-8: soporta acentos, ñ y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace la página responsive en dispositivos móviles -->
+
+  <meta name="description" content="Contactá a John Doe, Frontend Developer. Formulario disponible para consultas y colaboraciones.">
+  <!-- SEO: descripción de la página de contacto -->
+
+  <meta name="keywords" content="contacto, John Doe, frontend developer, consultas, colaboraciones">
+  <!-- SEO: palabras clave de la página de contacto -->
+
+  <meta name="author" content="John Doe">
+  <!-- SEO: autor de la página -->
+
+  <meta name="robots" content="index, follow">
+  <!-- SEO: permite indexación por buscadores -->
+
+  <meta property="og:title" content="Contacto - John Doe Frontend Developer">
+  <!-- Open Graph: título para redes sociales -->
+
+  <meta property="og:description" content="Contactá a John Doe para consultas de trabajo o colaboraciones.">
+  <!-- Open Graph: descripción para redes sociales -->
+
+  <meta property="og:type" content="website">
+  <!-- Open Graph: tipo de contenido -->
+
+  <title>Contact - John Doe</title>
+  <!-- Título de la pestaña del navegador -->
+
+</head>
+
+<body>
+  <!-- Inicio del contenido visible del documento -->
+
+    <!-- ================================================ -->
+  <!--                     HEADER                       -->
+  <!-- ================================================ -->
+
+  <header>
+    <!-- <header> es el encabezado semántico del sitio. Contiene logo y navegación -->
+
+    <table width="100%" border="1">
+      <!-- Usamos una tabla de 1 fila y 2 celdas para alinear logo (izquierda) y nav (derecha) -->
+      <!-- width="100%" hace que la tabla ocupe todo el ancho disponible -->
+      <!-- border="1" agrega el borde visible alrededor de las celdas (sin CSS) -->
+
+      <tr>
+        <!-- <tr> = table row: una fila de la tabla -->
+
+        <td>
+          <!-- <td> = table data: primera celda, contiene el logo y nombre -->
+
+          <span>&#128104;&#8205;&#128187;</span>
+          <!-- &#9632; es la entidad HTML para el símbolo ■ (cuadrado negro), usado como logo -->
+
+          <strong>Guido Rubio</strong>
+          <!-- <strong> resalta el nombre con énfasis semántico -->
+
+        </td>
+        <!-- Cierre de la primera celda -->
+
+        <td align="right">
+          <!-- Segunda celda con align="right" para alinear el nav a la derecha (sin CSS) -->
+
+          <nav>
+            <!-- <nav> marca el bloque de navegación principal -->
+
+            <a href="index.html">Home</a>
+            <!-- Enlace a la página de inicio -->
+
+            /
+
+            <a href="projects.html">Projects</a>
+            <!-- Enlace a la página de proyectos. La / separa los enlaces visualmente -->
+
+            /
+
+            <a href="articles.html">Articles</a>
+            <!-- Enlace a la página de artículos -->
+
+            /
+
+            <a href="contact.html">Contact</a>
+            <!-- Enlace a la página de contacto -->
+
+          </nav>
+          <!-- Cierre de la navegación -->
+
+        </td>
+        <!-- Cierre de la segunda celda -->
+
+      </tr>
+      <!-- Cierre de la fila del header -->
+
+    </table>
+    <!-- Cierre de la tabla del header -->
+
+  </header>
+  <!-- Cierre del encabezado del sitio -->
+
+  <main>
+    <!-- Contenido principal de la página de contacto -->
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section>
+
+      <br>
+
+      <h1>Contact Me</h1>
+      <!-- H1 único de la página -->
+
+      <p>¿Tenés alguna pregunta o propuesta? ¡Completá el formulario y te respondo a la brevedad!</p>
+
+      <br>
+
+    </section>
+
+    <!-- ===== FORMULARIO DE CONTACTO ===== -->
+    <section>
+
+      <h2>Send a Message</h2>
+
+      <form action="#" method="POST">
+        <!-- <form>: agrupa todos los campos del formulario -->
+        <!-- action="#": dónde se envían los datos (# es placeholder) -->
+        <!-- method="POST": envía los datos de forma segura, no visibles en la URL -->
+
+        <!-- CAMPO: NOMBRE -->
+        <p>
+          <!-- Usamos <p> para que cada campo quede en su propia línea sin CSS -->
+
+          <label for="nombre">Nombre completo *</label>
+          <!-- <label> describe al campo. for="nombre" lo vincula al input con id="nombre" -->
+          <!-- Al hacer clic en el label, se activa el campo: mejora la accesibilidad -->
+          <br>
+          <!-- Salto de línea para que el input quede debajo del label -->
+
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ej: Juan García"
+            required
+            autocomplete="name"
+            size="40"
+          >
+          <!-- type="text": acepta texto libre -->
+          <!-- id="nombre": vinculado al label con for="nombre" -->
+          <!-- required: campo obligatorio, validación nativa del navegador -->
+          <!-- autocomplete="name": el navegador puede autocompletar con el nombre del usuario -->
+          <!-- size="40": ancho visible del campo en caracteres -->
+
+        </p>
+
+        <!-- CAMPO: EMAIL -->
+        <p>
+
+          <label for="email">Correo electrónico *</label>
+          <br>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ej: juan@mail.com"
+            required
+            autocomplete="email"
+            size="40"
+          >
+          <!-- type="email": valida automáticamente el formato de email (ej: usuario@dominio.com) -->
+
+        </p>
+
+        <!-- CAMPO: ASUNTO -->
+        <p>
+
+          <label for="asunto">Asunto</label>
+          <!-- Sin asterisco: este campo no es obligatorio -->
+          <br>
+
+          <input
+            type="text"
+            id="asunto"
+            name="asunto"
+            placeholder="Ej: Consulta sobre disponibilidad"
+            size="40"
+          >
+          <!-- Sin required: campo opcional -->
+
+        </p>
+
+        <!-- CAMPO: TIPO DE CONSULTA (SELECT) -->
+        <p>
+
+          <label for="tipo-consulta">Tipo de consulta</label>
+          <br>
+
+          <select id="tipo-consulta" name="tipo-consulta">
+            <!-- <select> crea un menú desplegable con opciones predefinidas -->
+
+            <option value="">-- Seleccioná una opción --</option>
+            <!-- Opción vacía por defecto, actúa como placeholder -->
+
+            <option value="trabajo">Propuesta de trabajo</option>
+            <!-- value es lo que se envía al servidor; el texto es lo visible para el usuario -->
+
+            <option value="colaboracion">Colaboración en proyecto</option>
+
+            <option value="consulta-tecnica">Consulta técnica</option>
+
+            <option value="otro">Otro</option>
+
+          </select>
+
+        </p>
+
+        <!-- CAMPO: MENSAJE (TEXTAREA) -->
+        <p>
+
+          <label for="mensaje">Mensaje *</label>
+          <br>
+
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="6"
+            cols="50"
+            placeholder="Escribí tu mensaje acá..."
+            required
+            maxlength="1000"
+          ></textarea>
+          <!-- <textarea> es diferente a <input>: permite texto de múltiples líneas -->
+          <!-- rows="6": altura visible inicial (6 filas) -->
+          <!-- cols="50": ancho visible inicial (50 caracteres) -->
+          <!-- maxlength="1000": límite máximo de caracteres permitidos -->
+          <!-- A diferencia de <input>, <textarea> SÍ tiene etiqueta de cierre -->
+
+        </p>
+
+        <!-- CAMPO: CHECKBOX DE TÉRMINOS -->
+        <p>
+
+          <input
+            type="checkbox"
+            id="terminos"
+            name="terminos"
+            required
+          >
+          <!-- type="checkbox": casilla de verificación que el usuario puede marcar o desmarcar -->
+          <!-- required: el usuario debe marcarla antes de poder enviar el formulario -->
+
+          <label for="terminos">Acepto que mis datos sean utilizados para responder a mi consulta *</label>
+          <!-- El label vinculado al checkbox: al hacer clic en el texto también se marca la casilla -->
+
+        </p>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <p>
+
+          <button type="submit">Enviar mensaje</button>
+          <!-- type="submit": al hacer clic envía el formulario al servidor (a la URL en action) -->
+
+          &nbsp;&nbsp;
+          <!-- &nbsp; es un espacio en blanco no rompible: separa visualmente los botones -->
+
+          <button type="reset">Limpiar formulario</button>
+          <!-- type="reset": borra todos los campos del formulario y los devuelve a su valor inicial -->
+
+        </p>
+
+      </form>
+      <!-- Cierre del formulario -->
+
+    </section>
+
+    <!-- ===== INFORMACIÓN DE CONTACTO DIRECTA ===== -->
+    <section>
+
+      <h2>Other Ways to Reach Me</h2>
+
+      <address>
+        <!-- <address> es el elemento semántico para datos de contacto del autor/propietario del sitio -->
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:rguidovj@email.com">rguidovj@email.com</a>
+          <!-- href="mailto:..." abre el cliente de correo del usuario con el destinatario prellenado -->
+        </p>
+
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/SoyRuma" target="_blank">github.com/SoyRuma</a>
+        </p>
+
+      </address>
+      <!-- Cierre del bloque de contacto alternativo -->
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p align="center">
+      <small>&#169; all rights reserved 2025</small>
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

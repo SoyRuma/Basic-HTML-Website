@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz. lang="es" para accesibilidad y SEO -->
+
+<head>
+  <!-- Metadatos de la página de artículos -->
+
+  <meta charset="UTF-8">
+  <!-- Codificación de caracteres para soportar símbolos y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace la página responsive en dispositivos móviles -->
+
+  <meta name="description" content="Artículos técnicos escritos por John Doe sobre HTML, CSS, JavaScript y desarrollo frontend.">
+  <!-- SEO: descripción visible en resultados de búsqueda -->
+
+  <meta name="keywords" content="artículos web, HTML, CSS, JavaScript, frontend, tutorial, desarrollo web">
+  <!-- SEO: palabras clave del contenido -->
+
+  <meta name="author" content="John Doe">
+  <!-- SEO: autor del sitio -->
+
+  <meta name="robots" content="index, follow">
+  <!-- SEO: permite indexación y seguimiento de enlaces -->
+
+  <meta property="og:title" content="Artículos - John Doe Frontend Developer">
+  <!-- Open Graph: título para redes sociales -->
+
+  <meta property="og:description" content="Leé artículos técnicos de John Doe sobre desarrollo web frontend.">
+  <!-- Open Graph: descripción para redes sociales -->
+
+  <meta property="og:type" content="website">
+  <!-- Open Graph: tipo de contenido -->
+
+  <title>Articles - Guido Rubio</title>
+  <!-- Título de la pestaña del navegador -->
+
+</head>
+
+<body>
+  <!-- Inicio del contenido visible -->
+
+    <!-- ================================================ -->
+  <!--                     HEADER                       -->
+  <!-- ================================================ -->
+
+  <header>
+    <!-- <header> es el encabezado semántico del sitio. Contiene logo y navegación -->
+
+    <table width="100%" border="1">
+      <!-- Usamos una tabla de 1 fila y 2 celdas para alinear logo (izquierda) y nav (derecha) -->
+      <!-- width="100%" hace que la tabla ocupe todo el ancho disponible -->
+      <!-- border="1" agrega el borde visible alrededor de las celdas (sin CSS) -->
+
+      <tr>
+        <!-- <tr> = table row: una fila de la tabla -->
+
+        <td>
+          <!-- <td> = table data: primera celda, contiene el logo y nombre -->
+
+          <span>&#128104;&#8205;&#128187;</span>
+          <!-- &#9632; es la entidad HTML para el símbolo ■ (cuadrado negro), usado como logo -->
+
+          <strong>Guido Rubio</strong>
+          <!-- <strong> resalta el nombre con énfasis semántico -->
+
+        </td>
+        <!-- Cierre de la primera celda -->
+
+        <td align="right">
+          <!-- Segunda celda con align="right" para alinear el nav a la derecha (sin CSS) -->
+
+          <nav>
+            <!-- <nav> marca el bloque de navegación principal -->
+
+            <a href="index.html">Home</a>
+            <!-- Enlace a la página de inicio -->
+
+            /
+
+            <a href="projects.html">Projects</a>
+            <!-- Enlace a la página de proyectos. La / separa los enlaces visualmente -->
+
+            /
+
+            <a href="articles.html">Articles</a>
+            <!-- Enlace a la página de artículos -->
+
+            /
+
+            <a href="contact.html">Contact</a>
+            <!-- Enlace a la página de contacto -->
+
+          </nav>
+          <!-- Cierre de la navegación -->
+
+        </td>
+        <!-- Cierre de la segunda celda -->
+
+      </tr>
+      <!-- Cierre de la fila del header -->
+
+    </table>
+    <!-- Cierre de la tabla del header -->
+
+  </header>
+  <!-- Cierre del encabezado del sitio -->
+
+  <main>
+    <!-- Contenido principal de la página de artículos -->
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section>
+
+      <br>
+
+      <h1>Articles</h1>
+      <!-- H1 único de la página: necesario para SEO y jerarquía -->
+
+      <p>Artículos y reflexiones sobre desarrollo frontend, buenas prácticas y tecnologías web.</p>
+
+      <br>
+
+    </section>
+
+    <!-- ===== ARTÍCULO 1 ===== -->
+    <article>
+      <!-- <article> es el elemento semántico correcto para una publicación de blog -->
+
+      <header>
+        <!-- <header> dentro de <article> contiene título y metadatos del artículo -->
+
+        <h2>¿Por qué aprender HTML semántico antes que CSS?</h2>
+        <!-- Título del artículo como H2 -->
+
+        <p>
+          <time datetime="2025-01-15">15 de enero de 2025</time>
+          <!-- <time> elemento semántico para fechas. datetime da el formato legible por máquinas -->
+          ·
+          <strong>Categoría:</strong> HTML, Buenas Prácticas
+        </p>
+
+      </header>
+
+      <p>El HTML semántico es la base de cualquier sitio web bien construido. Antes de agregar estilos, es fundamental que la estructura del documento tenga significado por sí misma.</p>
+
+      <p>En este artículo exploramos por qué las etiquetas como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;article&gt;</code> impactan directamente en accesibilidad y SEO.</p>
+      <!-- <code> muestra código inline. &lt; y &gt; son entidades HTML para los símbolos < y > -->
+
+      <a href="#">Leer artículo completo &#8594;</a>
+      <!-- &#8594; es la entidad HTML para la flecha → -->
+
+    </article>
+
+    <hr>
+    <!-- Separador horizontal entre artículos -->
+
+    <!-- ===== ARTÍCULO 2 ===== -->
+    <article>
+
+      <header>
+
+        <h2>Formularios HTML accesibles: más allá del input</h2>
+
+        <p>
+          <time datetime="2025-02-03">3 de febrero de 2025</time>
+          ·
+          <strong>Categoría:</strong> HTML, Accesibilidad
+        </p>
+
+      </header>
+
+      <p>Los formularios son una de las partes más críticas de cualquier sitio web. Sin embargo, muchos desarrolladores no les prestan atención desde el punto de vista de la accesibilidad.</p>
+
+      <p>Veremos cómo usar correctamente <code>&lt;label&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code> y atributos ARIA para mejorar la experiencia de todos los usuarios.</p>
+
+      <a href="#">Leer artículo completo &#8594;</a>
+
+    </article>
+
+    <hr>
+
+    <!-- ===== ARTÍCULO 3 ===== -->
+    <article>
+
+      <header>
+
+        <h2>SEO básico con HTML: las etiquetas meta que necesitás conocer</h2>
+
+        <p>
+          <time datetime="2025-03-10">10 de marzo de 2025</time>
+          ·
+          <strong>Categoría:</strong> HTML, SEO
+        </p>
+
+      </header>
+
+      <p>El SEO comienza desde la estructura HTML de tu sitio. Sin configurar correctamente las etiquetas meta, tu sitio difícilmente aparecerá bien posicionado en Google.</p>
+
+      <p>Cubrimos: <code>&lt;title&gt;</code>, <code>&lt;meta name="description"&gt;</code>, Open Graph, y más herramientas básicas para un buen posicionamiento.</p>
+
+      <a href="#">Leer artículo completo &#8594;</a>
+
+    </article>
+
+    <hr>
+
+    <!-- ===== ARTÍCULO 4 ===== -->
+    <article>
+
+      <header>
+
+        <h2>Estructura de un proyecto web: cómo organizar tus archivos HTML</h2>
+
+        <p>
+          <time datetime="2025-03-25">25 de marzo de 2025</time>
+          ·
+          <strong>Categoría:</strong> HTML, Organización
+        </p>
+
+      </header>
+
+      <p>Una buena organización de archivos es tan importante como el código mismo. Veremos cómo estructurar un proyecto multi-página desde cero.</p>
+
+      <p>Aprenderás a crear y vincular múltiples páginas HTML, organizar recursos, y preparar tu proyecto para escalar con CSS y JavaScript en el futuro.</p>
+
+      <a href="#">Leer artículo completo &#8594;</a>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+    <p align="center">
+      <small>&#169; all rights reserved 2025</small>
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

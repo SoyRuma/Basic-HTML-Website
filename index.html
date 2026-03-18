@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz. lang="es" mejora accesibilidad y SEO -->
+
+<head>
+  <!-- Metadatos: información sobre la página, no visible en pantalla -->
+
+  <meta charset="UTF-8">
+  <!-- Codificación UTF-8: soporta acentos, ñ y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace la página responsive: ajusta el ancho al dispositivo -->
+
+  <meta name="description" content="Portfolio de Guido Rubio, Frontend Developer. Proyectos, experiencia laboral y educación.">
+  <!-- SEO: descripción que aparece en los resultados de búsqueda de Google -->
+
+  <meta name="keywords" content="frontend developer, portfolio, HTML, CSS, JavaScript, proyectos web">
+  <!-- SEO: palabras clave relacionadas con el contenido -->
+
+  <meta name="author" content="Guido Rubio">
+  <!-- SEO: identifica al autor del documento -->
+
+  <meta name="robots" content="index, follow">
+  <!-- SEO: permite que los buscadores indexen la página y sigan los enlaces -->
+
+  <meta property="og:title" content="Guido Rubio - Frontend Developer">
+  <!-- Open Graph: título al compartir en redes sociales -->
+
+  <meta property="og:description" content="Portfolio personal de Guido Rubio, desarrollador frontend.">
+  <!-- Open Graph: descripción al compartir en redes sociales -->
+
+  <meta property="og:type" content="website">
+  <!-- Open Graph: tipo de contenido -->
+
+  <title>Guido Rubio - Frontend Developer</title>
+  <!-- Título de la pestaña del navegador. Importante para SEO -->
+
+</head>
+
+<body>
+  <!-- Inicio del contenido visible del documento -->
+
+  <!-- ================================================ -->
+  <!--                     HEADER                       -->
+  <!-- ================================================ -->
+
+  <header>
+    <!-- <header> es el encabezado semántico del sitio. Contiene logo y navegación -->
+
+    <table width="100%" border="1">
+      <!-- Usamos una tabla de 1 fila y 2 celdas para alinear logo (izquierda) y nav (derecha) -->
+      <!-- width="100%" hace que la tabla ocupe todo el ancho disponible -->
+      <!-- border="1" agrega el borde visible alrededor de las celdas (sin CSS) -->
+
+      <tr>
+        <!-- <tr> = table row: una fila de la tabla -->
+
+        <td>
+          <!-- <td> = table data: primera celda, contiene el logo y nombre -->
+
+          <span>&#128104;&#8205;&#128187;</span>
+          <!-- &#9632; es la entidad HTML para el símbolo ■ (cuadrado negro), usado como logo -->
+
+          <strong>Guido Rubio</strong>
+          <!-- <strong> resalta el nombre con énfasis semántico -->
+
+        </td>
+        <!-- Cierre de la primera celda -->
+
+        <td align="right">
+          <!-- Segunda celda con align="right" para alinear el nav a la derecha (sin CSS) -->
+
+          <nav>
+            <!-- <nav> marca el bloque de navegación principal -->
+
+            <a href="index.html">Home</a>
+            <!-- Enlace a la página de inicio -->
+
+            /
+
+            <a href="projects.html">Projects</a>
+            <!-- Enlace a la página de proyectos. La / separa los enlaces visualmente -->
+
+            /
+
+            <a href="articles.html">Articles</a>
+            <!-- Enlace a la página de artículos -->
+
+            /
+
+            <a href="contact.html">Contact</a>
+            <!-- Enlace a la página de contacto -->
+
+          </nav>
+          <!-- Cierre de la navegación -->
+
+        </td>
+        <!-- Cierre de la segunda celda -->
+
+      </tr>
+      <!-- Cierre de la fila del header -->
+
+    </table>
+    <!-- Cierre de la tabla del header -->
+
+  </header>
+  <!-- Cierre del encabezado del sitio -->
+
+  <!-- ================================================ -->
+  <!--                   SECCIÓN HERO                   -->
+  <!-- ================================================ -->
+
+  <main>
+    <!-- <main> contiene el contenido principal y único de la página -->
+
+    <section>
+      <!-- Sección hero: presentación principal del desarrollador -->
+
+      <br>
+      <!-- <br> agrega un salto de línea para dar espacio visual superior sin CSS -->
+
+      <h1 align="center">Frontend Developer</h1>
+      <!-- <h1> encabezado principal: solo uno por página, esencial para SEO -->
+      <!-- align="center" centra el texto horizontalmente (atributo HTML sin CSS) -->
+
+      <p align="center">html only with proper layout, no styling</p>
+      <!-- Subtítulo descriptivo. align="center" para coincidir con el diseño del mockup -->
+
+      <br>
+      <!-- Espacio visual antes de la siguiente sección -->
+
+    </section>
+    <!-- Cierre de la sección hero -->
+
+    <!-- ================================================ -->
+    <!--        SECCIÓN CENTRAL: 3 COLUMNAS              -->
+    <!--   Projects | Work Experience | Education         -->
+    <!-- ================================================ -->
+
+    <section>
+      <!-- Sección de tres columnas: la estructura más importante del mockup -->
+
+      <table width="100%" border="1">
+        <!-- Tabla principal de 3 columnas para replicar el layout del wireframe -->
+        <!-- width="100%": ocupa todo el ancho de la página -->
+        <!-- border="1": muestra los bordes de la tabla, visible sin necesitar CSS -->
+
+        <tr>
+          <!-- Fila única con las tres columnas de contenido -->
+
+          <!-- ========== COLUMNA 1: PROYECTOS ========== -->
+          <td valign="top" width="25%">
+            <!-- valign="top": alinea el contenido al tope de la celda (sin CSS) -->
+            <!-- width="25%": esta columna ocupa el 25% del ancho total -->
+
+            <h2>Projects</h2>
+            <!-- Encabezado de la columna de proyectos -->
+
+            <ul>
+              <!-- Lista desordenada de proyectos: estructura semántica para un menú de ítems -->
+
+              <li>
+                <a href="https://soyruma.github.io/CV-GuidoRubio/">Single-Page CV</a>
+                <!-- El #html-portfolio es un ancla: lleva directo a ese proyecto en la página -->
+              </li>
+
+            </ul>
+            <!-- Cierre de la lista de proyectos -->
+
+          </td>
+          <!-- Cierre de la celda de proyectos -->
+
+          <!-- ========== COLUMNA 2: EXPERIENCIA LABORAL ========== -->
+          <td valign="top" width="40%">
+            <!-- Esta columna es más ancha (40%) porque tiene más contenido de texto -->
+
+            <h2>Work Experience</h2>
+            <!-- Encabezado de la columna de experiencia -->
+
+            <!-- Trabajo 1 -->
+            <article>
+              <!-- <article> para contenido autónomo: cada trabajo es un artículo independiente -->
+
+              <h3>roadmap.sh</h3>
+              <!-- <h3> tercer nivel de jerarquía, dentro del contexto de la sección -->
+
+              <p>Solved all the frontend projects</p>
+              <!-- Descripción del trabajo realizado -->
+
+              <a href="https://github.com/SoyRuma" target="_blank">Visit my Profile</a>
+              <!-- Enlace externo. target="_blank" abre en nueva pestaña -->
+
+            </article>
+            <!-- Cierre del primer trabajo -->
+
+            <hr>
+            <!-- Línea horizontal separadora entre los dos trabajos -->
+
+            <!-- Trabajo 2 -->
+            <article>
+              <!-- Segundo trabajo: mismo patrón que el primero -->
+
+              <h3>Mis Trabajos</h3>
+              <!-- Título del segundo trabajo -->
+
+              <p>Desarrollo de aplicaciones web completas con frontend en HTML, CSS y JavaScript y backend en Node.js con bases de datos relacionales y no relacionales. Implementación de APIs REST, autenticación de usuarios y despliegue en servidores en la nube.</p>
+              <!-- Descripción de la actividad open source -->
+
+              <a href="https://github.com/SoyRuma" target="_blank">Ver mis proyectos en GitHub</a>
+              <!-- Enlace al perfil de GitHub -->
+
+            </article>
+            <!-- Cierre del segundo trabajo -->
+
+          </td>
+          <!-- Cierre de la celda de experiencia -->
+
+          <!-- ========== COLUMNA 3: EDUCACIÓN ========== -->
+          <td valign="top" width="35%">
+            <!-- Columna de educación: 35% del ancho -->
+
+            <h2>Education</h2>
+            <!-- Encabezado de la columna de educación -->
+
+            <p>Técnico Electrónico egresado del Instituto Pio IX. Desarrollador Full Stack certificado por MIMO y roadmap.sh.</p>
+            <!-- Resumen de logros académicos principales -->
+
+            <h3>Mi Formación</h3>
+            <!-- Sub-encabezado para la lista de materias cursadas -->
+
+            <ul>
+              <!-- Lista de cursos/materias: estructura semántica con <ul> -->
+
+              <li>Técnico Electrónico</li>
+              <li>Desarrollador Full Stack</li>
+              <li>Email Marketing</li>
+              <li>Análisis de Datos y Métricas</li>
+              <!-- Cada <li> es un ítem de la lista de materias -->
+
+            </ul>
+            <!-- Cierre de la lista de cursos -->
+
+          </td>
+          <!-- Cierre de la celda de educación -->
+
+        </tr>
+        <!-- Cierre de la fila de las tres columnas -->
+
+      </table>
+      <!-- Cierre de la tabla de tres columnas -->
+
+    </section>
+    <!-- Cierre de la sección central -->
+
+    <!-- ================================================ -->
+    <!--          SECCIÓN: RESEÑAS DE PROFESORES          -->
+    <!-- ================================================ -->
+
+    <section>
+      <!-- Sección de testimoniales/reseñas de profesores -->
+
+      <h2>Resenias:</h2>
+      <!-- Encabezado de la sección de reseñas -->
+
+      <table width="100%" border="1">
+        <!-- Tabla de 3 columnas para mostrar las reseñas en fila, como en el mockup -->
+
+        <tr>
+          <!-- Fila con las tres tarjetas de reseñas -->
+
+          <!-- ========== RESEÑA 1 ========== -->
+          <td width="33%" valign="top">
+            <!-- Cada reseña ocupa un tercio del ancho total -->
+
+            <article>
+              <!-- <article> porque cada reseña es contenido independiente y reutilizable -->
+
+              <blockquote>
+                <!-- <blockquote> es el elemento semántico correcto para citas de terceros -->
+
+                <p>Guido es un alumno excepcional, siempre entregó sus proyectos con un nivel de detalle y prolijidad que lo distinguía del resto del grupo.</p>
+                <!-- Texto de la reseña/cita -->
+
+              </blockquote>
+              <!-- Cierre de la cita -->
+
+              <footer>
+                <!-- <footer> dentro del <article> para los datos del autor de la reseña -->
+
+                <cite>Prof. Marcelo Fernández</cite>
+                <!-- <cite> marca el nombre de quien hace la cita -->
+
+                <br>
+                <!-- Salto de línea para separar nombre del cargo -->
+
+                <small>Instructor de Desarrollo Web</small>
+                <!-- <small> para el cargo, menor importancia visual que el nombre -->
+
+              </footer>
+              <!-- Cierre del footer de la reseña -->
+
+            </article>
+            <!-- Cierre del artículo de la primera reseña -->
+
+          </td>
+          <!-- Cierre de la primera celda de reseña -->
+
+          <!-- ========== RESEÑA 2 ========== -->
+          <td width="33%" valign="top">
+
+            <article>
+
+              <blockquote>
+                <p>Trabajar con Guido fue una experiencia muy positiva. Su capacidad para resolver problemas técnicos de forma autónoma es notable para alguien en etapa de formación.</p>
+              </blockquote>
+
+              <footer>
+                <cite>Lic. Valeria Torres</cite>
+                <br>
+                <small>Coordinadora Académica</small>
+              </footer>
+
+            </article>
+
+          </td>
+          <!-- Cierre de la segunda celda de reseña -->
+
+          <!-- ========== RESEÑA 3 ========== -->
+          <td width="33%" valign="top">
+
+            <article>
+
+              <blockquote>
+                <p>Guido demuestra una dedicación y curiosidad poco comunes. Siempre iba más allá de lo pedido, investigando y proponiendo mejoras a sus propios proyectos.</p>
+              </blockquote>
+
+              <footer>
+                <cite>Ing. Pablo Sánchez</cite>
+                <br>
+                <small>Docente de Electrónica</small>
+              </footer>
+
+            </article>
+
+          </td>
+          <!-- Cierre de la tercera celda de reseña -->
+
+        </tr>
+        <!-- Cierre de la fila de reseñas -->
+
+      </table>
+      <!-- Cierre de la tabla de reseñas -->
+
+    </section>
+    <!-- Cierre de la sección de reseñas -->
+
+  </main>
+  <!-- Cierre del contenido principal -->
+
+  <!-- ================================================ -->
+  <!--                    FOOTER                        -->
+  <!-- ================================================ -->
+
+  <footer>
+    <!-- <footer> del documento: sección de cierre con información legal -->
+
+    <p align="center">
+      <!-- align="center" centra el texto del copyright, tal como muestra el mockup -->
+
+      <small>&#169; all rights reserved 2025</small>
+      <!-- &#169; es la entidad HTML para el símbolo © (copyright) -->
+      <!-- <small> indica texto de menor importancia: notas legales y pie de página -->
+
+    </p>
+
+  </footer>
+  <!-- Cierre del footer -->
+
+</body>
+<!-- Cierre del cuerpo del documento -->
+
+</html>
+<!-- Cierre del documento HTML -->
