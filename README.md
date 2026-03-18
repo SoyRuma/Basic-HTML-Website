@@ -1,9 +1,9 @@
-# CV – Guido Claudio Rubio
+# Basic HTML Website – Guido Claudio Rubio
 
-CV personal desarrollado con HTML semántico puro.
+Web simple  con HTML semántico puro.
 
 ## Ver proyecto
-https://soyruma.github.io/CV-GuidoRubio/
+https://github.com/SoyRuma/Basic-HTML-Website
 
 ## Proyecto en Roadmap.sh
 https://roadmap.sh/projects/basic-html-website
